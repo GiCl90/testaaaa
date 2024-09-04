@@ -1,14 +1,14 @@
-![image](https://github.com/MarlBurroW/RLMarlbot/assets/3024430/68bcbce7-545a-4ae6-b3b7-ab44fae8ad55)
+![image](https://github.com/MarlBurroW//assets/3024430/68bcbce7-545a-4ae6-b3b7-ab44fae8ad55)
 
 
-# RLMarlbot
+
 
 Bot player based on my [python SDK](https://github.com/MarlBurroW/RLSDK-Python) and RLBot standard.
 I recommend to look at the RLSDK-Python repository to understand how the bot works.
 
 ## Disclaimer
 
-⚠️⚠️⚠️ RLMarlbot is designed to facilitate the use of bots in private matches with your friends without the need for RLBot. It should be used primarily for testing and debugging by botmakers. However, this tool employs advanced reverse engineering techniques that could legitimately be considered cheating by the game's standards. I strongly advise against using RLMarlbot in ranked or casual matches. Your Rocket League account is likely to be banned quickly if you violate this rule.
+⚠️⚠️⚠️ is designed to facilitate the use of bots in private matches with your friends without the need for RLBot. It should be used primarily for testing and debugging by botmakers. However, this tool employs advanced reverse engineering techniques that could legitimately be considered cheating by the game's standards. I strongly advise against using in ranked or casual matches. Your Rocket League account is likely to be banned quickly if you violate this rule.
 
 ## Requirements
 - [Poetry](https://python-poetry.org/) to install dependencies
@@ -22,7 +22,7 @@ I recommend to look at the RLSDK-Python repository to understand how the bot wor
 ```
 usage: main.py [-h] [-p PID] [-b BOT] [--kickoff] [--minimap] [--monitoring] [--debug-keys] [--clock] [--debug]
 
-RLMarlbot
+
 
 options:
   -h, --help         show this help message and exit
@@ -41,10 +41,10 @@ options:
 
 ```bash	
 # Clone the repository
-git clone https://github.com/MarlBurroW/RLMarlbot
+
 
 # Change directory
-cd RLMarlbot
+cd 
 
 # Install dependencies
 poetry install
@@ -53,7 +53,7 @@ poetry install
 poetry shell
 
 # Run the game before running the script 
-python .\rlmarlbot\main.py
+
 ```
 
 ## Build binary from source
@@ -78,11 +78,11 @@ The compiled binary is here:  `rlnexto_python/memory_writer/memory_writer.pyd` s
 
 ## How does it works ?
 
-RLMarlbot is a bot that uses the RLSDK Python package to read data from RocketLeague.exe. It uses the data to build a GameTickPacket (Structure of data defined by RLBot framework) and put the data into the Nexto RLBot agent. The Agent compute data in the AI torch model and return a SimpleControllerState that contains the car inputs data. Then inputs are written in the game memory with a native python library written in C++ (memory_writer.pyd) to be able to overwrite car inputs faster than the game loop.
+is a bot that uses the RLSDK Python package to read data from RocketLeague.exe. It uses the data to build a GameTickPacket (Structure of data defined by RLBot framework) and put the data into the Nexto RLBot agent. The Agent compute data in the AI torch model and return a SimpleControllerState that contains the car inputs data. Then inputs are written in the game memory with a native python library written in C++ (memory_writer.pyd) to be able to overwrite car inputs faster than the game loop.
 
 ## Discord
 I created a discord so the community can discuss improvements, bugs, or just help each other.
-https://discord.gg/RLMarlbot
+
 
 ## Credits
 
